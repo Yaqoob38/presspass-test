@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Publisher Test - PressPass Integration</title>
+    <style>
+        body {
+            font-family: Georgia, serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+            background: #f9f9f9;
+        }
+        .article {
+            background: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #333;
+            border-bottom: 3px solid #e0e0e0;
+            padding-bottom: 10px;
+        }
+        .byline {
+            color: #666;
+            font-style: italic;
+            margin-bottom: 20px;
+        }
+        .paywall {
+            background: #f5f5f5;
+            border: 2px dashed #ccc;
+            padding: 30px;
+            text-align: center;
+            margin: 30px 0;
+            border-radius: 10px;
+        }
+        .premium-content {
+            display: none;
+            background: #e8f5e8;
+            padding: 20px;
+            border-left: 4px solid #4caf50;
+            margin: 20px 0;
+        }
+        .original-subscribe-btn {
+            background: #333;
+            color: white;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 0 10px;
+        }
+        .test-info {
+            background: #e3f2fd;
+            border: 1px solid #2196f3;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+        }
+        .test-info h3 {
+            margin-top: 0;
+            color: #1976d2;
+        }
+    </style>
+</head>
+<body>
+    <div class="test-info">
+        <h3>🧪 Real Publisher Test</h3>
+        <p><strong>Testing PressPass SDK from External Domain</strong></p>
+        <p>This simulates exactly how a real news publisher would integrate PressPass.</p>
+        <p><strong>Test Steps:</strong></p>
+        <ol>
+            <li>Make sure you're logged into <a href="https://presspass-11.lovable.app/login" target="_blank">PressPass</a></li>
+            <li>Come back here and click the "🔓 Unlock with 1 Credit" button</li>
+            <li>Watch the magic happen!</li>
+        </ol>
+    </div>
+
+    <!-- News site header -->
+    <header style="background: #1a1a1a; color: white; padding: 15px 0; margin-bottom: 20px;">
+        <div style="max-width: 800px; margin: 0 auto; padding: 0 20px;">
+            <h1 style="margin: 0; font-size: 24px; border: none; color: white;">TechNews Daily</h1>
+            <p style="margin: 5px 0 0 0; font-size: 12px; color: #ccc;">Independent tech journalism</p>
+        </div>
+    </header>
+
+    <article class="article">
+        <h1>EXCLUSIVE: Tech Giant Announces Revolutionary Breakthrough</h1>
+        <div class="byline">By Sarah Tech Reporter • Published 1 hour ago • Premium Content</div>
+        
+        <p>In an unprecedented move that could reshape the entire technology industry, a major tech company has just announced a groundbreaking innovation that promises to change everything we know about computing.</p>
+        
+        <p>Sources close to the development team reveal that this breakthrough has been years in the making, with implications that extend far beyond what anyone previously imagined. Early demonstrations show capabilities that seemed like science fiction just months ago.</p>
+        
+        <div class="paywall">
+            <h3>🔒 Exclusive Premium Content</h3>
+            <p>Continue reading to discover:</p>
+            <ul style="text-align: left; display: inline-block;">
+                <li>Which company made this announcement</li>
+                <li>Detailed technical specifications</li>
+                <li>Industry expert reactions and analysis</li>
+                <li>Timeline for commercial availability</li>
+                <li>Exclusive insider quotes and leaked documents</li>
+            </ul>
+            <p><strong>Subscribe to unlock this exclusive story</strong></p>
+            <button class="original-subscribe-btn">Subscribe - $12.99/month</button>
+            <!-- PressPass unlock button will automatically appear here -->
+        </div>
+
+        <!-- Hidden premium content -->
+        <div class="premium-content" id="premium-content">
+            <h3 style="color: #4caf50; margin-top: 30px;">🎉 Premium Content Unlocked!</h3>
+            
+            <h4>Company Revealed: MegaTech Industries</h4>
+            <p>MegaTech Industries, the $500 billion technology conglomerate, announced their "Project Phoenix" - a quantum-classical hybrid computing system that operates at room temperature and achieves unprecedented processing speeds.</p>
+            
+            <h4>Technical Specifications:</h4>
+            <ul>
+                <li><strong>Processing Power:</strong> 1000x faster than current supercomputers</li>
+                <li><strong>Energy Efficiency:</strong> 95% reduction in power consumption</li>
+                <li><strong>Size:</strong> Fits in a device smaller than a smartphone</li>
+                <li><strong>Cost:</strong> Expected to be 80% cheaper than current solutions</li>
+            </ul>
+            
+            <h4>Industry Expert Reactions:</h4>
+            <blockquote style="background: #f5f5f5; padding: 15px; border-left: 4px solid #ccc; margin: 20px 0;">
+                "This is the most significant technological advancement I've seen in my 30-year career. It will fundamentally change how we approach computing." 
+                <cite>- Dr. Elena Rodriguez, MIT Technology Review</cite>
+            </blockquote>
+            
+            <h4>Commercial Timeline:</h4>
+            <p>MegaTech plans to begin limited commercial deployment in Q3 2024, with full market availability expected by early 2025. Pre-orders for enterprise customers start next month.</p>
+            
+            <h4>Exclusive Leaked Document:</h4>
+            <p style="background: #fff3cd; padding: 15px; border: 1px solid #ffeaa7;">
+                <strong>Internal Memo (Confidential):</strong> "Phase 1 testing exceeded all expectations. We're not just ahead of the competition - we've just leapfrogged the entire industry by at least 10 years." - CEO Internal Communication
+            </p>
+            
+            <div style="background: #e8f5e8; padding: 15px; border-radius: 8px; margin: 20px 0;">
+                <p><strong>✅ Thank you for using PressPass!</strong></p>
+                <p>This exclusive content was unlocked with your credits. You now have access to breaking news that gives you a competitive edge in understanding the future of technology.</p>
+            </div>
+        </div>
+    </article>
+
+    <footer style="text-align: center; margin-top: 40px; padding: 20px; color: #666; font-size: 12px;">
+        <p>This is a test page demonstrating PressPass SDK integration for publishers.</p>
+        <p>In a real scenario, this would be a legitimate news site with actual premium content.</p>
+    </footer>
+
+    <!-- 
+    ===========================================
+    REAL PRESSPASS SDK INTEGRATION 
+    ===========================================
+    This is exactly what publishers add to their sites:
+    -->
+    <script src="https://presspass-11.lovable.app/presspass.js" 
+            data-publisher-id="test-publisher-123" 
+            async>
+    </script>
+
+    <script>
+        // Optional: Monitor unlock success
+        setInterval(() => {
+            const premiumContent = document.getElementById('premium-content');
+            if (premiumContent && premiumContent.style.display !== 'none' && premiumContent.offsetHeight > 0) {
+                console.log('🎉 Content successfully unlocked via PressPass!');
+            }
+        }, 1000);
+    </script>
+</body>
+</html> 
